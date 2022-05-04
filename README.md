@@ -5,13 +5,7 @@
 The objective of this project is to predict both NBA regular season and playoff game outcomes based on teams' elo ratings, shooting percentages, and other statistics.
 
 ### Introduction: 
-The fivethirtyeight.com website uses elo ratings to measure a team's strength throughout the regular season and playoffs. Depending on the final score of a game, the location of a game (home or away), and the elo ratings of the two teams entering a game, each team's elo rating changes after every game they play.  Furthermore, elo ratings are posited as more accurate than W-L records in assessing a team's strength.  Although fivethirtyeight does not explicitly define the formula it uses to calculate elo ratings, the general equation for elo ratings is defined here:
-
-$E_0=1300$
-
-$E_{i+1}=K(S_{team}-\frac{1}{1+10^{\frac{E_{i,opp}-E_i}{400}}})+E_i$
-
-The $E_0$ term is a team's first elo rating, $E_{i+1}$ is a team's elo rating after a game, $E_i$ is a team's rating before a game, and $E_{i,opp}$ is the team's opponent's elo rating before the game.  Furthermore, K takes into account the winner of the game, the margin of victory, the location of the game, and the elo ratings of both teams before the game.  Please see the following two articles for more detailed explanations of NBA elo ratings:
+The fivethirtyeight.com website uses elo ratings to measure a team's strength throughout the regular season and playoffs. Depending on the final score of a game, the location of a game (home or away), and the elo ratings of the two teams entering a game, each team's elo rating changes after every game they play.  Furthermore, elo ratings are posited as more accurate than W-L records in assessing a team's strength.  Although fivethirtyeight does not explicitly define the formula it uses to calculate elo ratings, the general equation and definitions of elo ratings can be found in these two articles:
 
 - https://www.ergosum.co/nate-silvers-nba-elo-algorithm/
 - https://fivethirtyeight.com/features/how-we-calculate-nba-elo-ratings/
